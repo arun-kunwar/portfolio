@@ -12,11 +12,11 @@ function Nav() {
         <img src={Logo} alt="Logo" className='size-12  ' />
        
       <ul className='hidden md:flex  pr-32 '>
-        <li className='p-5 hover:text-blue-400'>Home</li>
-        <li className='p-5 hover:text-blue-400'>About</li>
-        <li className='p-5 hover:text-blue-400'>Contact</li>
-        <li className='p-5 hover:text-blue-400'>Blog</li>
-        <li className='p-5 hover:text-blue-400'>Help</li>
+        <li className='p-5 font-bold hover:text-blue-400'>Home</li>
+        <li className='p-5 font-bold hover:text-blue-400'>About</li>
+        <li className='p-5 font-bold hover:text-blue-400'>Contact</li>
+        <li className='p-5 font-bold hover:text-blue-400'>Blog</li>
+        <li className='p-5 font-bold hover:text-blue-400'>Help</li>
        
         
       </ul>
