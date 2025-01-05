@@ -5,7 +5,7 @@ import About from "./componets/About"
 
 function App() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Nav/>
       <Home/>
       <About/>
