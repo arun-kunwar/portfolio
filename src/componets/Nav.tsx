@@ -4,17 +4,24 @@ import { IoMdMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+  const menuItems=[
+    {title: "Home"  },
+    {title: "About" },
+    {title: "Contact" },
+    {title: "Blog" },
+    {title: "Help"  }  
+  ] 
   return (
     <>
       <div className="flex justify-between items-center h-20  mx-auto px-4">
         <img src={Logo} alt="Logo" className="size-12  " />
 
         <ul className="hidden md:flex  pr-32 ">
-          <li className="p-5 font-bold hover:text-blue-400">Home</li>
-          <li className="p-5 font-bold hover:text-blue-400">About</li>
-          <li className="p-5 font-bold hover:text-blue-400">Contact</li>
-          <li className="p-5 font-bold hover:text-blue-400">Blog</li>
-          <li className="p-5 font-bold hover:text-blue-400">Help</li>
+          {menuItems.map((item,index)=>(
+            <li key={index} className="p-5 hover:text-blue-400">{item.title}</li>
+          ))}
+         
+         
         </ul>
         <div className="md:hidden z-10" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? (
@@ -36,19 +43,12 @@ function Nav() {
             className="size-12 absolute mt-8 ml-3"
           />
           <ul className="pt-24 uppercase">
-            <li className="p-4 border-b border-gray-300  hover:text-blue-400">
-              Home
-            </li>
-            <li className="p-4 border-b border-gray-300 hover:text-blue-400">
-              About
-            </li>
-            <li className="p-4 border-b border-gray-300 hover:text-blue-400">
-              Contact
-            </li>
-            <li className="p-4 border-b border-gray-300 hover:text-blue-400">
-              Blog
-            </li>
-            <li className="p-4  hover:text-blue-400">Help</li>
+            { menuItems.map((items,index)=>(
+              <li key={index} className="p-4 border-b border-gray-300 hover:text-blue-400">
+                {items.title}
+              </li>
+            ))}
+            
           </ul>
         </div>
       </div>

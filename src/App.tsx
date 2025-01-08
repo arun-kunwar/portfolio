@@ -2,6 +2,7 @@ import Nav from "./componets/Nav"
 import Home from "./componets/Home"
 import About from "./componets/About"
 import Portfolio from "./componets/Portfolio"
+import Contact from "./componets/Contact"
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Home/>
       <About/>
       <Portfolio/>
+      <Contact/>
     </div>
   )
 }
