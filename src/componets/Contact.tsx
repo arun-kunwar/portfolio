@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <section className="bg-white py-20">
-      <div className=" bg-gray-900 h-[55vh]  mx-auto shadow-md rounded-lg md:hidden ">
+      <div className=" bg-gray-900 h-[65vh]  mx-auto shadow-md rounded-lg md:hidden ">
         <div className="">
           <form action="">
             <div>
